@@ -59,7 +59,7 @@ public class CharacterSidewaysMovement : MonoBehaviour
                 }
                 break;
             case GameState.Playing:
-                UIManager.Instance.IncreaseScore(0.001f);
+                UIManager.Instance.IncreaseScore(0.01f);
 
                 CheckHeight();
 

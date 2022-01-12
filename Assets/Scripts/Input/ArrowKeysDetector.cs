@@ -18,4 +18,10 @@ public class ArrowKeysDetector : MonoBehaviour, IInputDetector
         else
             return null;
     }
+	void Update(){
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+		Application.Quit();
+		}
+	}
 }
