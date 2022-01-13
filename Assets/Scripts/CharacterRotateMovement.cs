@@ -18,6 +18,9 @@ public class CharacterRotateMovement : MonoBehaviour
 
     bool isInSwipeArea;
 
+	[Header("gotta go fast")]
+	public float GoFasterSpeed = 0.01f;
+	public float GoFaster = 1.0f;
 
     IInputDetector inputDetector = null;
 
@@ -63,7 +66,8 @@ public class CharacterRotateMovement : MonoBehaviour
                 //apply gravity
                 moveDirection.y -= gravity * Time.deltaTime;
                 //move the player
-                controller.Move(moveDirection * Time.deltaTime);
+				GoFaster += GoFasterSpeed * Time.deltaTime;
+                controller.Move(GoFaster * moveDirection * Time.deltaTime);
 
                 break;
             case GameState.Dead:
