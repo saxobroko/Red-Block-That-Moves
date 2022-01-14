@@ -4,13 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class IntroLevel : MonoBehaviour {
 
-	public void StraightLevelClick()
+	public void SettingsClick()
     {
-        SceneManager.LoadScene("straightPathsLevel");
+        SceneManager.LoadScene("Settings");
     }
 
     public void RotatedLevelClick()
     {
         SceneManager.LoadScene("rotatedPathsLevel");
     }
+	
+	public void QuitClick()
+	{
+		Application.Quit();
+	}
 }

@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/rotatedPathsLevel.unity
     guid: ee73cf4f3461af2488e33f22fe0e0e3c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: b9e4c2387ba642c4f9b305bd5c2361ed
   m_configObjects: {}
